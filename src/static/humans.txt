@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Jean-Christophe Cuvelier
+Site: https://github.com/totophe/PureContent
+Twitter: @totophe.
+Location: Brussels, Belgium.
+
+/* SITE */
+Last update: YYYY/MM/DD
+Standards: HTML5, CSS3
+Software: PureContent

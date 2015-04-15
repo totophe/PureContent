@@ -39,8 +39,17 @@ gulp.task('templates', function () {
 		;
 });
 
-gulp.task('default', ['templates', 'server'], function () {
+gulp.task('static', function () {
+	return gulp.src('./src/static/**/*')
+		.on('error', handleError)
+		.pipe(gulp.dest('./web'))
+		.pipe(browserSync.reload({stream: true}))
+		;
+});
 
+gulp.task('default', ['static', 'templates', 'server'], function () {
+
+	gulp.watch('./src/static/**', ['static']);
 	gulp.watch('./src/templates/**', ['templates']);
 	gulp.watch('./src/app/config/**', ['templates']);
 
