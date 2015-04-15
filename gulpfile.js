@@ -50,13 +50,17 @@ gulp.task('static', function () {
 
 gulp.task('default', ['static', 'templates', 'server'], function () {
 
-	gulp.watch('./src/static/**', ['static']);
-	gulp.watch('./src/templates/**', ['templates']);
-	gulp.watch('./src/app/config/**', ['templates']);
+	watch('./src/static/**', function () {
+		gulp.run('static');
+	});
 
-	//gulp.src('./web').pipe(watch('src/js/**/*.*', function () {
-	//	gulp.run('browserify');
-	//}));
+	watch('./src/templates/**', function () {
+		gulp.run('templates');
+	});
+
+	watch('./src/app/config/**', function () {
+		gulp.run('templates');
+	});
 
 });
 
