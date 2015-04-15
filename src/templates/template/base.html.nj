@@ -23,7 +23,7 @@
 
 <body>
 
-{% include "header/header.html" %}
+{% include "header/header.html.nj" %}
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
 {% block body %}
@@ -31,7 +31,7 @@
 
 <div class="container">
     <hr>
-    {% include "footer/footer.html" %}
+    {% include "footer/footer.html.nj" %}
 </div> <!-- /container -->
 
 <!-- Bootstrap core JavaScript

@@ -1,4 +1,4 @@
-{% extends "template/base.html" %}
+{% extends "template/base.html.nj" %}
 
 {% block body %}
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -11,6 +11,6 @@
 </div>
 
 <div class="container">
-    {% include "content/index/top3.html" %}
+    {% include "content/index/top3.html.nj" %}
 </div>
 {% endblock %}

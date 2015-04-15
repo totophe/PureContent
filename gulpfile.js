@@ -30,10 +30,11 @@ gulp.task('server', function () {
 
 gulp.task('templates', function () {
 	nunjucksRender.nunjucks.configure(['./src/templates/']);
-	return gulp.src('./src/templates/*.html')
+	return gulp.src('./src/templates/*.nj')
 		.pipe(data(getDataForFile))
 		.pipe(nunjucksRender())
 		.on('error', handleError)
+		.pipe(rename({extname: ''}))
 		.pipe(gulp.dest('./web'))
 		.pipe(browserSync.reload({stream: true}))
 		;
