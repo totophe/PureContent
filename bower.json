@@ -1,0 +1,31 @@
+{
+  "name": "PureContent",
+  "version": "0.1.0",
+  "authors": [
+    "Jean-Christophe Cuvelier <jcc@cuvelier.co>"
+  ],
+  "description": "PureContent allows you to manage a simple pure HTML/CSS website and update it's components at ease",
+  "main": "web/index.html",
+  "keywords": [
+    "pure",
+    "cms",
+    "html",
+    "javascript",
+    "purecontent",
+    "content"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/lib/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2"
+  }
+}

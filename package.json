@@ -1,0 +1,37 @@
+{
+  "name": "PureContent",
+  "version": "0.1.0",
+  "description": "PureContent allows you to manage a simple pure HTML/CSS website and update it's components at ease",
+  "main": "web/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node_modules/.bin/bower install",
+    "start": "npm install && gulp",
+    "build": "echo \"Error: not yet implemented\" && exit 1"
+  },
+  "keywords": [
+    "pure",
+    "cms",
+    "html",
+    "javascript",
+    "purecontent",
+    "content"
+  ],
+  "author": "Jean-Christophe Cuvelier <jcc@cuvelier.co>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "browserify": "^9.0.8",
+    "fs": "0.0.2",
+    "gulp": "^3.8.11",
+    "gulp-compile-handlebars": "^0.4.4",
+    "gulp-data": "^1.2.0",
+    "gulp-nunjucks-render": "^0.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.2.4",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "bower": "^1.4.1"
+  }
+}
