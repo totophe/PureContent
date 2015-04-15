@@ -22,7 +22,7 @@ This will launch a web server and track your changes to update it live
 
 The ./src folder should contain at least this a /templates folder and the /app/config/parameters.json file.
 
-The ./web folder should stay empty and not be committed at any time. Uses the folder ./src/static to put all your static content.
+The ./web folder should stay empty and not be committed at any time. Uses the folder ./src/resources to put all your static content.
 
 ## Production
 

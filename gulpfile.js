@@ -40,18 +40,18 @@ gulp.task('templates', function () {
 		;
 });
 
-gulp.task('static', function () {
-	return gulp.src('./src/static/**/*')
+gulp.task('resources', function () {
+	return gulp.src('./src/resources/**/*')
 		.on('error', handleError)
 		.pipe(gulp.dest('./web'))
 		.pipe(browserSync.reload({stream: true}))
 		;
 });
 
-gulp.task('default', ['static', 'templates', 'server'], function () {
+gulp.task('default', ['resources', 'templates', 'server'], function () {
 
-	watch('./src/static/**', function () {
-		gulp.run('static');
+	watch('./src/resources/**', function () {
+		gulp.run('resources');
 	});
 
 	watch('./src/templates/**', function () {
